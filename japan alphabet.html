@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Hiragana & Katakana Chart</title>
+    <script>
+        function playAudio(text) {
+            let audio = new Audio(`https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${encodeURIComponent(text)}`);
+            audio.play();
+        }
+    </script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: red; /* Red button background */
+            color: white; /* White text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+        }
+        button:hover {
+            background-color: darkred; /* Darker red when hovering */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Japanese Hiragana & Katakana Chart</h2>
+<table>
+    <tr>
+        <th>Hiragana</th>
+        <th>Katakana</th>
+        <th>Romaji</th>
+        <th>Pronunciation</th>
+        <th>Play Sound</th>
+    </tr>
+    <tr><td>あ</td><td>ア</td><td>a</td><td>"a" in "father"</td><td><button onclick="playAudio('あ')">Play</button></td></tr>
+    <tr><td>い</td><td>イ</td><td>i</td><td>"ee" in "see"</td><td><button onclick="playAudio('い')">Play</button></td></tr>
+    <tr><td>う</td><td>ウ</td><td>u</td><td>"oo" in "food"</td><td><button onclick="playAudio('う')">Play</button></td></tr>
+    <tr><td>え</td><td>エ</td><td>e</td><td>"e" in "bed"</td><td><button onclick="playAudio('え')">Play</button></td></tr>
+    <tr><td>お</td><td>オ</td><td>o</td><td>"o" in "go"</td><td><button onclick="playAudio('お')">Play</button></td></tr>
+    <tr><td>か</td><td>カ</td><td>ka</td><td>"ca" in "car"</td><td><button onclick="playAudio('か')">Play</button></td></tr>
+    <tr><td>き</td><td>キ</td><td>ki</td><td>"key"</td><td><button onclick="playAudio('き')">Play</button></td></tr>
+    <tr><td>く</td><td>ク</td><td>ku</td><td>"coo" in "cool"</td><td><button onclick="playAudio('く')">Play</button></td></tr>
+    <tr><td>け</td><td>ケ</td><td>ke</td><td>"ke" in "kettle"</td><td><button onclick="playAudio('け')">Play</button></td></tr>
+    <tr><td>こ</td><td>コ</td><td>ko</td><td>"co" in "coast"</td><td><button onclick="playAudio('こ')">Play</button></td></tr>
+    <tr><td>さ</td><td>サ</td><td>sa</td><td>"sa" in "saw"</td><td><button onclick="playAudio('さ')">Play</button></td></tr>
+    <tr><td>し</td><td>シ</td><td>shi</td><td>"she"</td><td><button onclick="playAudio('し')">Play</button></td></tr>
+    <tr><td>す</td><td>ス</td><td>su</td><td>"sue"</td><td><button onclick="playAudio('す')">Play</button></td></tr>
+    <tr><td>せ</td><td>セ</td><td>se</td><td>"se" in "set"</td><td><button onclick="playAudio('せ')">Play</button></td></tr>
+    <tr><td>そ</td><td>ソ</td><td>so</td><td>"so" in "sock"</td><td><button onclick="playAudio('そ')">Play</button></td></tr>
+    <tr><td>た</td><td>タ</td><td>ta</td><td>"ta" in "tall"</td><td><button onclick="playAudio('た')">Play</button></td></tr>
+    <tr><td>ち</td><td>チ</td><td>chi</td><td>"chee" in "cheese"</td><td><button onclick="playAudio('ち')">Play</button></td></tr>
+    <tr><td>つ</td><td>ツ</td><td>tsu</td><td>"tsu" in "tsunami"</td><td><button onclick="playAudio('つ')">Play</button></td></tr>
+    <tr><td>て</td><td>テ</td><td>te</td><td>"te" in "ten"</td><td><button onclick="playAudio('て')">Play</button></td></tr>
+    <tr><td>と</td><td>ト</td><td>to</td><td>"toe"</td><td><button onclick="playAudio('と')">Play</button></td></tr>
+    <tr><td>ん</td><td>ン</td><td>n</td><td>"n" in "noon"</td><td><button onclick="playAudio('ん')">Play</button></td></tr>
+</table>
+
+</body>
+</html>
